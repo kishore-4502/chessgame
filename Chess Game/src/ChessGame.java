@@ -36,7 +36,7 @@ public class ChessGame {
             String selected_index=in.next();
             if(selected_index.equals("exit")){
                 try {
-                    editor =new FileWriter("record.txt");
+                    editor =new FileWriter("record.txt",true);
                     editor.write("Exited ");
                     editor.close();
                 }catch(IOException e){
